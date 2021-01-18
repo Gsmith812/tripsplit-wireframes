@@ -5,9 +5,37 @@
         <title>Wireframe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="add-expense-modal.css">
     </head>
     <body>
-
+        <section class="add-expense-modal">
+            <form class="add-expense">
+                <label for='expense-name'>
+                    Expense Name:
+                </label>
+                <input type='text' id='expense-name' name='expenseName' required />
+                <label for='expense-amount'>Amount:</label>
+                <input type='number' placeholder="$0.00" required />
+                <label for='expense-paid-by'>Paid by:</label>
+                <select id='expense-paid-by' name='expensePaidBy' required >
+                    <option value=''>Select One...</option>
+                    <option value='George'>George</option>
+                    <option value='Darren'>Darren</option>
+                </select>
+                <label for='add-friends-expense'>Split the expense with:</label>
+                <input type="checkbox" value='George'>George</input>
+                <label for='split-type'>How do you want to split it?</label>
+                <select id='split-type'>
+                    <option value=''>Select one...</option>
+                    <option value='equal'>Equally</option>
+                    <option value='percentage'>Percentages</option>
+                    <option value='amounts'>Amount</option>
+                    <option value='isOwed'>User is owed</option>
+                </select>
+                <label for='expense-date'>Date:</label>
+                <input type='date' id='expense-date' name='expenseDate' required />
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
     </body>
 </html>

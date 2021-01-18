@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.add-friend-modal {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+    border-radius: .5em;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    z-index: 10;
+}
+
+.search-bar {
+    padding: 1em;
+}
+.search-bar label,button,input {
+    margin-bottom: 1em;
+}
